@@ -2,11 +2,11 @@ preprocessing.R: This script includes the QC and preprocessing of the DNA methyl
 
 DManalysis.R: This script includes the differential methylation analysing using DMPfinder and bumphunter and the comparison of the two methods.
 
-classifiers_comparison_table.py: script that applies a number of different classifiers to different topological features and for each topological feature summarises the performance of all classifiers in a csv file
+classifiers_comparison_table.py: This script applies a number of different classifiers to different topological features and for each topological feature summarises the performance of all classifiers in a csv file
 
 classifiers_evaluation_functions_py: This script includes the function to evaluate classification performance used in classifiers_comparison_table.py
 
-create_topo_features_csv.py:script that reads the graph files (.graphml) of all samples, calculates their topological features and saves them in csv files
+create_topo_features_csv.py: This script reads the graph files (.graphml) of all samples, calculates their topological features and saves them in csv files
 
 CREATE_parenclitic.py: This script creates the baseline model for non-aggressive samples and then for each sample not used in the modelling creates the parenclitic network.
 
