@@ -1,0 +1,21 @@
+preprocessing.R: This script includes the QC and preprocessing of the DNA methylation data.
+
+DManalysis.R: This script includes the differential methylation analysing using DMPfinder and bumphunter and the comparison of the two methods.
+
+classifiers_comparison_table.py: script that applies a number of different classifiers to different topological features and for each topological feature summarises the performance of all classifiers in a csv file
+
+classifiers_evaluation_functions_py: This script includes the function to evaluate classification performance used in classifiers_comparison_table.py
+
+create_topo_features_csv.py:script that reads the graph files (.graphml) of all samples, calculates their topological features and saves them in csv files
+
+CREATE_parenclitic.py: This script creates the baseline model for non-aggressive samples and then for each sample not used in the modelling creates the parenclitic network.
+
+CREATE_parenclitic_functions.py: This script includes the functions necessary to create the parenclitic networks used in parenclitic.py
+
+topo_analysis.py: This script looks at the topological features of the training and test datasets (excluding the modelling data) and identifies loci with significant differences between aggressive and non-aggressive 
+
+topo_analysis_functions.py: This script includes the functions for the analysis of the topological features extracted from the parenclitic graphs used in topo_analysis.py
+
+candidates_boxplot.py: This script generates the boxplots comparing the beta values between aggressive and non-aggressive tumours at the candidate loci.
+
+Classification.py: This script includes the Logistic Regression classifier and the evaluation of its performance. It also contains the identification of the most important loci for the classification,the bar plot of their coefficient values and their annotation.
